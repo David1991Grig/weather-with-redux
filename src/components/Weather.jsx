@@ -2,7 +2,7 @@
 import { useSelector } from 'react-redux';
 
 const Weather = () => {
-    const { loading, data, error } = useSelector((state) => state.weather);
+    const { loading, data, error } = useSelector((state) => state);
     return (
         <div className={'infoWeath'}>
             {error ? (
