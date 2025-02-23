@@ -9,8 +9,6 @@ const initialState = {
 
 const weatherReducer = (state = initialState, action) => {
     switch (action.type) {
-        case FETCH_DATA:
-            return { ...state, loading: true, error: null };
         case FETCH_DATA_SUCCESS:
             return { ...state, loading: false, data: action.payload };
         case FETCH_DATA_FAILURE:
